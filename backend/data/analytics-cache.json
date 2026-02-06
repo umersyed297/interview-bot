@@ -1,0 +1,31 @@
+{
+  "dashboard": {
+    "data": {
+      "overview": {
+        "totalCandidates": 0,
+        "totalSessions": 0,
+        "averageScore": 0,
+        "overallPassRate": 0,
+        "recentActivityCount": 0
+      },
+      "scoreDistribution": {
+        "0-2": 0,
+        "3-4": 0,
+        "5-6": 0,
+        "7-8": 0,
+        "9-10": 0
+      },
+      "commonWeaknesses": [],
+      "commonSkillGaps": [],
+      "difficultyDistribution": {
+        "easy": 0,
+        "medium": 0,
+        "hard": 0
+      },
+      "topPerformers": [],
+      "generatedAt": "2026-02-06T14:50:00.364Z"
+    },
+    "cachedAt": 1770389400364,
+    "expiresAt": 1770389700364
+  }
+}

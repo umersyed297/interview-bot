@@ -1,0 +1,21 @@
+{
+  "name": "interview-bot-backend",
+  "version": "1.0.0",
+  "description": "Backend API for AI Interview Bot using Gemini",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "expo-document-picker": "~14.0.8",
+    "expo-file-system": "~19.0.21",
+    "express": "^4.19.2",
+    "multer": "^2.0.2",
+    "pdf-parse": "^1.1.1"
+  }
+}

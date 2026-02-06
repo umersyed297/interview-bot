@@ -1,0 +1,1666 @@
+{
+  "interview_1770394960112": {
+    "id": "interview_1770394960112",
+    "savedAt": "2026-02-06T16:28:10.065Z",
+    "sessionId": "interview_1770394960112",
+    "candidateId": "anonymous",
+    "finalScore": 5.4,
+    "passed": false,
+    "questionCount": 13,
+    "duration": 305,
+    "feedbackReport": {
+      "summary": {
+        "overallScore": 5.4,
+        "tier": {
+          "key": "developing",
+          "min": 4,
+          "label": "Developing",
+          "emoji": "📚",
+          "description": "Significant gaps. Needs focused practice."
+        },
+        "passed": false,
+        "questionCount": 13,
+        "duration": 305,
+        "headline": "📚 Keep practicing! Focus on the improvement areas below to level up."
+      },
+      "dimensions": {
+        "technicalKnowledge": {
+          "score": 5.4,
+          "label": "Technical Knowledge",
+          "feedback": "Adequate technical knowledge. Consider deepening your understanding of core concepts."
+        },
+        "communication": {
+          "score": 3.4,
+          "label": "Communication & Clarity",
+          "feedback": "Responses need more structure and detail. Practice giving complete, multi-sentence answers."
+        },
+        "confidence": {
+          "score": 6.6,
+          "label": "Confidence & Delivery",
+          "feedback": "Generally confident but some hesitation detected. Reduce hedging language like \"I think\" or \"maybe\"."
+        },
+        "relevance": {
+          "score": 0.6,
+          "label": "Relevance & Terminology",
+          "feedback": "Responses could be more focused on the topic. Use domain-specific vocabulary."
+        }
+      },
+      "strengths": [
+        {
+          "text": "Confident and assertive communication",
+          "frequency": 9,
+          "consistency": 82
+        },
+        {
+          "text": "Strong technical understanding",
+          "frequency": 1,
+          "consistency": 9
+        }
+      ],
+      "improvements": [
+        {
+          "text": "Missing key technical terms",
+          "frequency": 11,
+          "priority": "high"
+        },
+        {
+          "text": "No concrete examples provided",
+          "frequency": 11,
+          "priority": "high"
+        },
+        {
+          "text": "Answer lacks structure",
+          "frequency": 11,
+          "priority": "high"
+        },
+        {
+          "text": "Response is too brief",
+          "frequency": 9,
+          "priority": "high"
+        },
+        {
+          "text": "Answer lacks technical accuracy",
+          "frequency": 2,
+          "priority": "medium"
+        }
+      ],
+      "roadmap": {
+        "immediate": [
+          {
+            "area": "Relevance",
+            "action": "Create a list of 20 key terms for your target role. Practice using them naturally in sentences.",
+            "priority": "high"
+          },
+          {
+            "area": "Communication",
+            "action": "Focus secondary attention on improving communication.",
+            "priority": "medium"
+          }
+        ],
+        "shortTerm": [
+          {
+            "action": "Complete 5 full mock interviews and track your score progression.",
+            "priority": "high"
+          },
+          {
+            "action": "Practice STAR method: Write out 5 stories from your experience following Situation-Task-Action-Result.",
+            "priority": "high"
+          },
+          {
+            "action": "Study these identified skill gaps: General, JavaScript/TypeScript, Database",
+            "priority": "high"
+          }
+        ],
+        "longTerm": [
+          {
+            "action": "Do one mock interview per week to maintain and improve skills.",
+            "priority": "medium"
+          },
+          {
+            "action": "Read technical blogs and practice explaining new concepts to build terminology.",
+            "priority": "medium"
+          },
+          {
+            "action": "Join a study group or find a mock interview partner for peer feedback.",
+            "priority": "low"
+          }
+        ]
+      },
+      "answerHighlights": {
+        "best": {
+          "compositeScore": 5,
+          "dimensions": {
+            "aiJudgment": {
+              "score": 5,
+              "rating": "average",
+              "weight": 0.35
+            },
+            "keywordCoverage": {
+              "score": 3,
+              "matchedKeywords": [
+                "challenge",
+                "learn"
+              ],
+              "totalRelevant": 30,
+              "matchCount": 2,
+              "topics": [
+                "behavioral"
+              ],
+              "rating": "needs_improvement",
+              "weight": 0.2
+            },
+            "completeness": {
+              "score": 5,
+              "wordCount": 42,
+              "sentenceCount": 1,
+              "lengthScore": 9,
+              "structureScore": 4,
+              "specificityScore": 4,
+              "starCoverage": {
+                "score": 0,
+                "components": {
+                  "situation": false,
+                  "task": false,
+                  "action": false,
+                  "result": false
+                },
+                "coveredCount": 0,
+                "totalComponents": 4
+              },
+              "hasExamples": false,
+              "hasNumbers": false,
+              "rating": "average",
+              "weight": 0.25
+            },
+            "confidence": {
+              "score": 7,
+              "hedgingPhrases": [],
+              "fillerWords": [],
+              "assertiveLanguage": [],
+              "hedgingDensity": 0,
+              "fillerDensity": 0,
+              "rating": "good",
+              "weight": 0.2
+            }
+          },
+          "strengths": [
+            "Confident and assertive communication"
+          ],
+          "weaknesses": [
+            "Missing key technical terms",
+            "No concrete examples provided",
+            "Answer lacks structure"
+          ],
+          "tips": [
+            "Use more specific technical terms relevant to the topic",
+            "Include specific examples: \"For instance...\" or \"In my experience...\"",
+            "Add metrics when possible: \"reduced load time by 40%\"",
+            "Structure behavioral answers using STAR: Situation, Task, Action, Result",
+            "Use multiple sentences to structure your answer clearly"
+          ]
+        },
+        "worst": {
+          "compositeScore": 3,
+          "dimensions": {
+            "aiJudgment": {
+              "score": 3,
+              "rating": "needs_improvement",
+              "weight": 0.35
+            },
+            "keywordCoverage": {
+              "score": 0,
+              "matchedKeywords": [],
+              "totalRelevant": 30,
+              "matchCount": 0,
+              "topics": [
+                "behavioral"
+              ],
+              "rating": "needs_improvement",
+              "weight": 0.2
+            },
+            "completeness": {
+              "score": 3,
+              "wordCount": 14,
+              "sentenceCount": 1,
+              "lengthScore": 4,
+              "structureScore": 4,
+              "specificityScore": 4,
+              "starCoverage": {
+                "score": 0,
+                "components": {
+                  "situation": false,
+                  "task": false,
+                  "action": false,
+                  "result": false
+                },
+                "coveredCount": 0,
+                "totalComponents": 4
+              },
+              "hasExamples": false,
+              "hasNumbers": false,
+              "rating": "needs_improvement",
+              "weight": 0.25
+            },
+            "confidence": {
+              "score": 6,
+              "hedgingPhrases": [
+                "um"
+              ],
+              "fillerWords": [],
+              "assertiveLanguage": [],
+              "hedgingDensity": 7.1,
+              "fillerDensity": 0,
+              "rating": "good",
+              "weight": 0.2
+            }
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Answer lacks technical accuracy",
+            "Missing key technical terms",
+            "Response is too brief",
+            "No concrete examples provided",
+            "Answer lacks structure"
+          ],
+          "tips": [
+            "Use more specific technical terms relevant to the topic",
+            "Elaborate more - aim for 30-60 words per response",
+            "Include specific examples: \"For instance...\" or \"In my experience...\"",
+            "Add metrics when possible: \"reduced load time by 40%\"",
+            "Structure behavioral answers using STAR: Situation, Task, Action, Result",
+            "Use multiple sentences to structure your answer clearly",
+            "Review core concepts in this topic area before the next attempt"
+          ]
+        },
+        "all": [
+          {
+            "index": 1,
+            "score": 5,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "No concrete examples provided"
+            ]
+          },
+          {
+            "index": 2,
+            "score": 5,
+            "strengths": [
+              "Strong technical understanding",
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 3,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          },
+          {
+            "index": 4,
+            "score": 4,
+            "strengths": [],
+            "weaknesses": [
+              "Missing key technical terms",
+              "No concrete examples provided"
+            ]
+          },
+          {
+            "index": 5,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 6,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 7,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 8,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 9,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 10,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 11,
+            "score": 3,
+            "strengths": [],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          }
+        ]
+      },
+      "difficultyProgression": {
+        "startLevel": 1,
+        "endLevel": 1,
+        "peaked": 2,
+        "trajectory": "stable"
+      }
+    },
+    "integrityReport": {
+      "overallSuspicionScore": 1,
+      "suspicionLevel": "clean",
+      "totalFlags": 2,
+      "flagBreakdown": {
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      "flags": [
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 831 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        },
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 335 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        }
+      ],
+      "timing": {
+        "averageResponseTimeSec": 2.8,
+        "fastestResponseSec": 2.02,
+        "slowestResponseSec": 4.123
+      },
+      "responseLengthConsistency": {
+        "averageWords": 14,
+        "standardDeviation": 10.4
+      },
+      "verdict": "No suspicious patterns detected. Results are reliable."
+    },
+    "skillGaps": {
+      "roleLevel": "senior",
+      "questionsAnalyzed": 11,
+      "topicScores": {
+        "General": 4,
+        "JavaScript/TypeScript": 4,
+        "React/Frontend": 4.2,
+        "Problem Solving": 4.3,
+        "Database": 4,
+        "Leadership": 4.2,
+        "Backend/API": 4.5,
+        "System Design": 4,
+        "Communication": 4
+      },
+      "gaps": [
+        {
+          "topic": "General",
+          "currentScore": 4,
+          "expectedScore": 8,
+          "deficit": 4,
+          "severity": "critical",
+          "recommendation": "Focus on improving General skills through dedicated practice and study.",
+          "questionsAsked": 3
+        },
+        {
+          "topic": "JavaScript/TypeScript",
+          "currentScore": 4,
+          "expectedScore": 8,
+          "deficit": 4,
+          "severity": "critical",
+          "recommendation": "Review core JS concepts: closures, prototypes, async/await, event loop. Practice on platforms like LeetCode.",
+          "questionsAsked": 3
+        },
+        {
+          "topic": "Database",
+          "currentScore": 4,
+          "expectedScore": 8,
+          "deficit": 4,
+          "severity": "critical",
+          "recommendation": "Study SQL joins, indexing strategies, and database normalization. Practice query writing.",
+          "questionsAsked": 1
+        },
+        {
+          "topic": "React/Frontend",
+          "currentScore": 4.2,
+          "expectedScore": 8,
+          "deficit": 3.8,
+          "severity": "critical",
+          "recommendation": "Build small React projects focusing on hooks, state management, and component lifecycle.",
+          "questionsAsked": 6
+        },
+        {
+          "topic": "Problem Solving",
+          "currentScore": 4.3,
+          "expectedScore": 8,
+          "deficit": 3.7,
+          "severity": "critical",
+          "recommendation": "Practice breaking down complex problems. Use whiteboard/verbal problem solving.",
+          "questionsAsked": 3
+        },
+        {
+          "topic": "Backend/API",
+          "currentScore": 4.5,
+          "expectedScore": 8,
+          "deficit": 3.5,
+          "severity": "critical",
+          "recommendation": "Practice building REST APIs with authentication, error handling, and database integration.",
+          "questionsAsked": 2
+        },
+        {
+          "topic": "System Design",
+          "currentScore": 4,
+          "expectedScore": 7,
+          "deficit": 3,
+          "severity": "critical",
+          "recommendation": "Study Grokking the System Design Interview. Practice designing real systems like URL shorteners.",
+          "questionsAsked": 1
+        },
+        {
+          "topic": "Communication",
+          "currentScore": 4,
+          "expectedScore": 7,
+          "deficit": 3,
+          "severity": "critical",
+          "recommendation": "Record yourself explaining technical concepts. Practice concise, structured answers.",
+          "questionsAsked": 2
+        },
+        {
+          "topic": "Leadership",
+          "currentScore": 4.2,
+          "expectedScore": 7,
+          "deficit": 2.8,
+          "severity": "significant",
+          "recommendation": "Practice STAR method stories about leadership experiences. Read about engineering management.",
+          "questionsAsked": 5
+        }
+      ],
+      "strengths": [],
+      "typeAnalysis": {
+        "behavioral": {
+          "score": 3,
+          "expected": 7,
+          "gap": 4,
+          "status": "below_expectation"
+        },
+        "follow_up": {
+          "score": 4.2,
+          "expected": 5,
+          "gap": 0.8,
+          "status": "below_expectation"
+        }
+      },
+      "overallGapScore": 35,
+      "prioritizedLearningPath": [
+        {
+          "priority": 1,
+          "topic": "General",
+          "currentLevel": 4,
+          "targetLevel": 8,
+          "action": "Focus on improving General skills through dedicated practice and study.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 2,
+          "topic": "JavaScript/TypeScript",
+          "currentLevel": 4,
+          "targetLevel": 8,
+          "action": "Review core JS concepts: closures, prototypes, async/await, event loop. Practice on platforms like LeetCode.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 3,
+          "topic": "Database",
+          "currentLevel": 4,
+          "targetLevel": 8,
+          "action": "Study SQL joins, indexing strategies, and database normalization. Practice query writing.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 4,
+          "topic": "React/Frontend",
+          "currentLevel": 4.2,
+          "targetLevel": 8,
+          "action": "Build small React projects focusing on hooks, state management, and component lifecycle.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 5,
+          "topic": "Problem Solving",
+          "currentLevel": 4.3,
+          "targetLevel": 8,
+          "action": "Practice breaking down complex problems. Use whiteboard/verbal problem solving.",
+          "estimatedHours": 20
+        }
+      ]
+    },
+    "adaptiveState": {
+      "currentLevel": 1,
+      "windowSize": 3,
+      "scoreHistory": [
+        3,
+        4,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5
+      ],
+      "levelHistory": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "questionIndex": 2,
+      "followUpPending": false,
+      "followUpContext": {
+        "question": "Using a REST API for state management is an interesting approach, but typically, state management libraries like Redux or Context API are more common in React. Can you clarify how you would integrate REST API calls into your state management approach? SCORE|6/10",
+        "answer": "no I would use reduce our context specifi",
+        "score": 5
+      },
+      "adaptationLog": [
+        {
+          "questionIndex": 2,
+          "score": 3,
+          "avgScore": 3,
+          "previousLevel": 2,
+          "newLevel": 2,
+          "changed": false,
+          "timestamp": "2026-02-06T16:23:40.051Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 3.5,
+          "previousLevel": 2,
+          "newLevel": 1,
+          "changed": true,
+          "timestamp": "2026-02-06T16:24:06.309Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 5,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:24:52.559Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 4.3,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:25:25.176Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 4.3,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:25:47.359Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:26:08.378Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:26:31.061Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:26:55.147Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:27:18.237Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 4,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:27:30.941Z"
+        },
+        {
+          "questionIndex": 2,
+          "score": 5,
+          "avgScore": 4.3,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:27:56.691Z"
+        }
+      ]
+    },
+    "questionAnswerPairs": [
+      {
+        "question": "Hello. I'm conducting your technical interview today. First, tell me about your professional background and key technical skills. SCORE|0/10",
+        "answer": "my skills include HTML CSS JavaScript and you can also see from my resume",
+        "aiScore": 3,
+        "compositeScore": 3,
+        "timestamp": "2026-02-06T16:23:40.051Z"
+      },
+      {
+        "question": "I appreciate your response, but I need more detail about your professional background. Can you elaborate on specific projects you've worked on or responsibilities you've had in your previous roles? SCORE|3/10",
+        "answer": "I work do not abs project Malware detector which I was front and developer",
+        "aiScore": 4,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:24:06.309Z"
+      },
+      {
+        "question": "It sounds like you have experience as a front-end developer on a malware detection project. Can you provide more details about your role, the technologies you used, and any challenges you faced during that project? SCORE|4/10",
+        "answer": "yes I was a front and developer there and the challenges I faced was learning react that was most challenging for me and in terms of Technology is I used a react and other front end tell me CSS for the CSS",
+        "aiScore": 5,
+        "compositeScore": 5,
+        "timestamp": "2026-02-06T16:24:52.559Z"
+      },
+      {
+        "question": "Learning React can indeed be challenging. Can you give a specific example of a feature you implemented in the malware detector project using React, and how you approached any difficulties you encountered during that implementation? SCORE|5/10",
+        "answer": "yes I implemented the front end on which I use the react components like the dropped on menus and this sort of things",
+        "aiScore": 6,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:25:25.176Z"
+      },
+      {
+        "question": "Could you provide more detail about how you structured your React components and any state management solutions you utilized during the project? Additionally, how did you ensure the performance of the application? SCORE|6/10",
+        "answer": "next question please",
+        "aiScore": 6,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:25:47.359Z"
+      },
+      {
+        "question": "Sure. Can you describe a time when you encountered a significant technical problem in your work and how you resolved it? Please be specific about the problem and your approach to solving it. SCORE|6/10",
+        "answer": "camera camera any problem in my life",
+        "aiScore": 5,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:26:08.378Z"
+      },
+      {
+        "question": "It seems you're having difficulty providing a specific example. Can you elaborate on any technical challenges you faced in a project and how you overcame them? This will help me understand your problem-solving skills better. SCORE|5/10",
+        "answer": "kindly ask question related to my skills and ask a technical interview not a generic",
+        "aiScore": 6,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:26:31.061Z"
+      },
+      {
+        "question": "Understood. Let's focus on your technical skills. Can you explain how you would design a scalable web application using React and Node.js? Please include considerations for state management and API communication. SCORE|6/10",
+        "answer": "India ask hard question this is not a simple",
+        "aiScore": 6,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:26:55.147Z"
+      },
+      {
+        "question": "I appreciate your feedback. Let’s simplify this. Can you describe how you would handle state management in a React application? What tools or libraries would you use and why? SCORE|6/10",
+        "answer": "yes I would use the",
+        "aiScore": 5,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:27:18.237Z"
+      },
+      {
+        "question": "It seems your response was cut off. Could you please complete your thought on which tools or libraries you would use for state management in a React application, and why you would choose them? SCORE|5/10",
+        "answer": "yes I use the rest API for the statement",
+        "aiScore": 6,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:27:30.941Z"
+      },
+      {
+        "question": "Using a REST API for state management is an interesting approach, but typically, state management libraries like Redux or Context API are more common in React. Can you clarify how you would integrate REST API calls into your state management approach? SCORE|6/10",
+        "answer": "no I would use reduce our context specifi",
+        "aiScore": 7,
+        "compositeScore": 5,
+        "timestamp": "2026-02-06T16:27:56.691Z"
+      }
+    ]
+  },
+  "interview_1770395678003": {
+    "id": "interview_1770395678003",
+    "savedAt": "2026-02-06T16:41:42.886Z",
+    "sessionId": "interview_1770395678003",
+    "candidateId": "anonymous",
+    "finalScore": 3.8,
+    "passed": false,
+    "questionCount": 19,
+    "duration": 409,
+    "feedbackReport": {
+      "summary": {
+        "overallScore": 3.8,
+        "tier": {
+          "key": "beginner",
+          "min": 0,
+          "label": "Beginner",
+          "emoji": "🌱",
+          "description": "Fundamental skills need development."
+        },
+        "passed": false,
+        "questionCount": 19,
+        "duration": 409,
+        "headline": "🌱 Everyone starts somewhere. Use the roadmap below to build your interview skills."
+      },
+      "dimensions": {
+        "technicalKnowledge": {
+          "score": 3.8,
+          "label": "Technical Knowledge",
+          "feedback": "Technical knowledge needs strengthening. Focus on fundamentals and practice explaining concepts clearly."
+        },
+        "communication": {
+          "score": 3.6,
+          "label": "Communication & Clarity",
+          "feedback": "Responses need more structure and detail. Practice giving complete, multi-sentence answers."
+        },
+        "confidence": {
+          "score": 7.3,
+          "label": "Confidence & Delivery",
+          "feedback": "Confident and assertive delivery. You project professionalism and conviction."
+        },
+        "relevance": {
+          "score": 0.2,
+          "label": "Relevance & Terminology",
+          "feedback": "Responses could be more focused on the topic. Use domain-specific vocabulary."
+        }
+      },
+      "strengths": [
+        {
+          "text": "Confident and assertive communication",
+          "frequency": 10,
+          "consistency": 83
+        },
+        {
+          "text": "Assertive language patterns",
+          "frequency": 2,
+          "consistency": 17
+        },
+        {
+          "text": "Strong professional demeanor",
+          "frequency": 0,
+          "consistency": 0
+        }
+      ],
+      "improvements": [
+        {
+          "text": "Missing key technical terms",
+          "frequency": 12,
+          "priority": "high"
+        },
+        {
+          "text": "No concrete examples provided",
+          "frequency": 12,
+          "priority": "high"
+        },
+        {
+          "text": "Answer lacks structure",
+          "frequency": 12,
+          "priority": "high"
+        },
+        {
+          "text": "Answer lacks technical accuracy",
+          "frequency": 7,
+          "priority": "high"
+        },
+        {
+          "text": "Response is too brief",
+          "frequency": 7,
+          "priority": "high"
+        }
+      ],
+      "roadmap": {
+        "immediate": [
+          {
+            "area": "Relevance",
+            "action": "Create a list of 20 key terms for your target role. Practice using them naturally in sentences.",
+            "priority": "high"
+          },
+          {
+            "area": "Communication",
+            "action": "Focus secondary attention on improving communication.",
+            "priority": "medium"
+          }
+        ],
+        "shortTerm": [
+          {
+            "action": "Complete 5 full mock interviews and track your score progression.",
+            "priority": "high"
+          },
+          {
+            "action": "Practice STAR method: Write out 5 stories from your experience following Situation-Task-Action-Result.",
+            "priority": "high"
+          },
+          {
+            "action": "Study these identified skill gaps: General, JavaScript/TypeScript, Communication",
+            "priority": "high"
+          }
+        ],
+        "longTerm": [
+          {
+            "action": "Do one mock interview per week to maintain and improve skills.",
+            "priority": "medium"
+          },
+          {
+            "action": "Read technical blogs and practice explaining new concepts to build terminology.",
+            "priority": "medium"
+          },
+          {
+            "action": "Join a study group or find a mock interview partner for peer feedback.",
+            "priority": "low"
+          }
+        ]
+      },
+      "answerHighlights": {
+        "best": {
+          "compositeScore": 5,
+          "dimensions": {
+            "aiJudgment": {
+              "score": 5,
+              "rating": "average",
+              "weight": 0.35
+            },
+            "keywordCoverage": {
+              "score": 0,
+              "matchedKeywords": [],
+              "totalRelevant": 30,
+              "matchCount": 0,
+              "topics": [
+                "general"
+              ],
+              "rating": "needs_improvement",
+              "weight": 0.2
+            },
+            "completeness": {
+              "score": 4,
+              "wordCount": 26,
+              "sentenceCount": 1,
+              "lengthScore": 6,
+              "structureScore": 4,
+              "specificityScore": 4,
+              "starCoverage": {
+                "score": 0,
+                "components": {
+                  "situation": false,
+                  "task": false,
+                  "action": false,
+                  "result": false
+                },
+                "coveredCount": 0,
+                "totalComponents": 4
+              },
+              "hasExamples": false,
+              "hasNumbers": false,
+              "rating": "average",
+              "weight": 0.25
+            },
+            "confidence": {
+              "score": 9,
+              "hedgingPhrases": [],
+              "fillerWords": [],
+              "assertiveLanguage": [
+                "i am",
+                "my experience"
+              ],
+              "hedgingDensity": 0,
+              "fillerDensity": 0,
+              "rating": "excellent",
+              "weight": 0.2
+            }
+          },
+          "strengths": [
+            "Confident and assertive communication",
+            "Assertive language patterns"
+          ],
+          "weaknesses": [
+            "Missing key technical terms",
+            "No concrete examples provided",
+            "Answer lacks structure"
+          ],
+          "tips": [
+            "Use more specific technical terms relevant to the topic",
+            "Include specific examples: \"For instance...\" or \"In my experience...\"",
+            "Add metrics when possible: \"reduced load time by 40%\"",
+            "Structure behavioral answers using STAR: Situation, Task, Action, Result",
+            "Use multiple sentences to structure your answer clearly"
+          ]
+        },
+        "worst": {
+          "compositeScore": 2,
+          "dimensions": {
+            "aiJudgment": {
+              "score": 0,
+              "rating": "needs_improvement",
+              "weight": 0.35
+            },
+            "keywordCoverage": {
+              "score": 0,
+              "matchedKeywords": [],
+              "totalRelevant": 30,
+              "matchCount": 0,
+              "topics": [
+                "behavioral"
+              ],
+              "rating": "needs_improvement",
+              "weight": 0.2
+            },
+            "completeness": {
+              "score": 3,
+              "wordCount": 3,
+              "sentenceCount": 1,
+              "lengthScore": 2,
+              "structureScore": 4,
+              "specificityScore": 4,
+              "starCoverage": {
+                "score": 0,
+                "components": {
+                  "situation": false,
+                  "task": false,
+                  "action": false,
+                  "result": false
+                },
+                "coveredCount": 0,
+                "totalComponents": 4
+              },
+              "hasExamples": false,
+              "hasNumbers": false,
+              "rating": "needs_improvement",
+              "weight": 0.25
+            },
+            "confidence": {
+              "score": 7,
+              "hedgingPhrases": [],
+              "fillerWords": [],
+              "assertiveLanguage": [],
+              "hedgingDensity": 0,
+              "fillerDensity": 0,
+              "rating": "good",
+              "weight": 0.2
+            }
+          },
+          "strengths": [
+            "Confident and assertive communication"
+          ],
+          "weaknesses": [
+            "Answer lacks technical accuracy",
+            "Missing key technical terms",
+            "Response is too brief",
+            "No concrete examples provided",
+            "Answer lacks structure"
+          ],
+          "tips": [
+            "Use more specific technical terms relevant to the topic",
+            "Elaborate more - aim for 30-60 words per response",
+            "Include specific examples: \"For instance...\" or \"In my experience...\"",
+            "Add metrics when possible: \"reduced load time by 40%\"",
+            "Structure behavioral answers using STAR: Situation, Task, Action, Result",
+            "Use multiple sentences to structure your answer clearly",
+            "Review core concepts in this topic area before the next attempt"
+          ]
+        },
+        "all": [
+          {
+            "index": 1,
+            "score": 5,
+            "strengths": [
+              "Confident and assertive communication",
+              "Assertive language patterns"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "No concrete examples provided"
+            ]
+          },
+          {
+            "index": 2,
+            "score": 5,
+            "strengths": [
+              "Confident and assertive communication",
+              "Assertive language patterns"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "No concrete examples provided"
+            ]
+          },
+          {
+            "index": 3,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "No concrete examples provided"
+            ]
+          },
+          {
+            "index": 4,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 5,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          },
+          {
+            "index": 6,
+            "score": 4,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Missing key technical terms",
+              "Response is too brief"
+            ]
+          },
+          {
+            "index": 7,
+            "score": 3,
+            "strengths": [],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          },
+          {
+            "index": 8,
+            "score": 3,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          },
+          {
+            "index": 9,
+            "score": 3,
+            "strengths": [],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          },
+          {
+            "index": 10,
+            "score": 3,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          },
+          {
+            "index": 11,
+            "score": 3,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          },
+          {
+            "index": 12,
+            "score": 2,
+            "strengths": [
+              "Confident and assertive communication"
+            ],
+            "weaknesses": [
+              "Answer lacks technical accuracy",
+              "Missing key technical terms"
+            ]
+          }
+        ]
+      },
+      "difficultyProgression": {
+        "startLevel": 1,
+        "endLevel": 1,
+        "peaked": 2,
+        "trajectory": "stable"
+      }
+    },
+    "integrityReport": {
+      "overallSuspicionScore": 15,
+      "suspicionLevel": "clean",
+      "totalFlags": 8,
+      "flagBreakdown": {
+        "high": 6,
+        "medium": 2,
+        "low": 0
+      },
+      "flags": [
+        {
+          "type": "fast_response",
+          "severity": "medium",
+          "detail": "Responded with 26 words in 2.0s",
+          "points": 15
+        },
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 780 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        },
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 584 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        },
+        {
+          "type": "fast_response",
+          "severity": "medium",
+          "detail": "Responded with 33 words in 2.8s",
+          "points": 15
+        },
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 711 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        },
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 279 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        },
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 490 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        },
+        {
+          "type": "high_wpm",
+          "severity": "high",
+          "detail": "Effective 500 WPM (natural speech: ~130 WPM)",
+          "points": 25
+        }
+      ],
+      "timing": {
+        "averageResponseTimeSec": 2.8,
+        "fastestResponseSec": 1.958,
+        "slowestResponseSec": 4.517
+      },
+      "responseLengthConsistency": {
+        "averageWords": 16,
+        "standardDeviation": 10
+      },
+      "verdict": "No suspicious patterns detected. Results are reliable."
+    },
+    "skillGaps": {
+      "roleLevel": "senior",
+      "questionsAnalyzed": 12,
+      "topicScores": {
+        "General": 3.5,
+        "JavaScript/TypeScript": 3.7,
+        "React/Frontend": 5,
+        "Communication": 3,
+        "Problem Solving": 4
+      },
+      "gaps": [
+        {
+          "topic": "General",
+          "currentScore": 3.5,
+          "expectedScore": 8,
+          "deficit": 4.5,
+          "severity": "critical",
+          "recommendation": "Focus on improving General skills through dedicated practice and study.",
+          "questionsAsked": 6
+        },
+        {
+          "topic": "JavaScript/TypeScript",
+          "currentScore": 3.7,
+          "expectedScore": 8,
+          "deficit": 4.3,
+          "severity": "critical",
+          "recommendation": "Review core JS concepts: closures, prototypes, async/await, event loop. Practice on platforms like LeetCode.",
+          "questionsAsked": 6
+        },
+        {
+          "topic": "Communication",
+          "currentScore": 3,
+          "expectedScore": 7,
+          "deficit": 4,
+          "severity": "critical",
+          "recommendation": "Record yourself explaining technical concepts. Practice concise, structured answers.",
+          "questionsAsked": 1
+        },
+        {
+          "topic": "Problem Solving",
+          "currentScore": 4,
+          "expectedScore": 8,
+          "deficit": 4,
+          "severity": "critical",
+          "recommendation": "Practice breaking down complex problems. Use whiteboard/verbal problem solving.",
+          "questionsAsked": 1
+        },
+        {
+          "topic": "React/Frontend",
+          "currentScore": 5,
+          "expectedScore": 8,
+          "deficit": 3,
+          "severity": "critical",
+          "recommendation": "Build small React projects focusing on hooks, state management, and component lifecycle.",
+          "questionsAsked": 1
+        }
+      ],
+      "strengths": [],
+      "typeAnalysis": {
+        "behavioral": {
+          "score": 2,
+          "expected": 7,
+          "gap": 5,
+          "status": "below_expectation"
+        },
+        "technical": {
+          "score": 5,
+          "expected": 8,
+          "gap": 3,
+          "status": "below_expectation"
+        },
+        "follow_up": {
+          "score": 3.6,
+          "expected": 5,
+          "gap": 1.4,
+          "status": "below_expectation"
+        },
+        "problem_solving": {
+          "score": 4,
+          "expected": 8,
+          "gap": 4,
+          "status": "below_expectation"
+        }
+      },
+      "overallGapScore": 40,
+      "prioritizedLearningPath": [
+        {
+          "priority": 1,
+          "topic": "General",
+          "currentLevel": 3.5,
+          "targetLevel": 8,
+          "action": "Focus on improving General skills through dedicated practice and study.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 2,
+          "topic": "JavaScript/TypeScript",
+          "currentLevel": 3.7,
+          "targetLevel": 8,
+          "action": "Review core JS concepts: closures, prototypes, async/await, event loop. Practice on platforms like LeetCode.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 3,
+          "topic": "Communication",
+          "currentLevel": 3,
+          "targetLevel": 7,
+          "action": "Record yourself explaining technical concepts. Practice concise, structured answers.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 4,
+          "topic": "Problem Solving",
+          "currentLevel": 4,
+          "targetLevel": 8,
+          "action": "Practice breaking down complex problems. Use whiteboard/verbal problem solving.",
+          "estimatedHours": 20
+        },
+        {
+          "priority": 5,
+          "topic": "React/Frontend",
+          "currentLevel": 5,
+          "targetLevel": 8,
+          "action": "Build small React projects focusing on hooks, state management, and component lifecycle.",
+          "estimatedHours": 20
+        }
+      ]
+    },
+    "adaptiveState": {
+      "currentLevel": 1,
+      "windowSize": 3,
+      "scoreHistory": [
+        2,
+        5,
+        5,
+        4,
+        3,
+        3,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "levelHistory": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "questionIndex": 4,
+      "followUpPending": false,
+      "followUpContext": {
+        "question": "Can you elaborate on what \"interview in boat\" entails? What technologies are you using, and what challenges are you encountering in this project? SCORE|3/10",
+        "answer": "learning the tools and Technology is that will be used in this project are we tell with challenging and I",
+        "score": 3
+      },
+      "adaptationLog": [
+        {
+          "questionIndex": 2,
+          "score": 2,
+          "avgScore": 2,
+          "previousLevel": 2,
+          "newLevel": 2,
+          "changed": false,
+          "timestamp": "2026-02-06T16:36:54.066Z"
+        },
+        {
+          "questionIndex": 3,
+          "score": 5,
+          "avgScore": 3.5,
+          "previousLevel": 2,
+          "newLevel": 1,
+          "changed": true,
+          "timestamp": "2026-02-06T16:37:19.559Z"
+        },
+        {
+          "questionIndex": 3,
+          "score": 5,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:37:48.257Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 4,
+          "avgScore": 4.7,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:38:31.509Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 3,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:38:48.369Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 3,
+          "avgScore": 3.3,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:39:12.653Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 4,
+          "avgScore": 3.3,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:39:29.660Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 4,
+          "avgScore": 3.7,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:39:54.096Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 4,
+          "avgScore": 4,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:40:26.609Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 3,
+          "avgScore": 3.7,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:40:46.580Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 3,
+          "avgScore": 3.3,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:41:07.051Z"
+        },
+        {
+          "questionIndex": 4,
+          "score": 3,
+          "avgScore": 3,
+          "previousLevel": 1,
+          "newLevel": 1,
+          "changed": false,
+          "timestamp": "2026-02-06T16:41:30.739Z"
+        }
+      ]
+    },
+    "questionAnswerPairs": [
+      {
+        "question": "Thank you for your response. Please tell me about your professional background and key technical skills. SCORE|0/10",
+        "answer": "bolna bol bol",
+        "aiScore": 0,
+        "compositeScore": 2,
+        "timestamp": "2026-02-06T16:36:54.066Z"
+      },
+      {
+        "question": "It seems there may be a misunderstanding. I need you to share your professional background and key technical skills to proceed with the interview. SCORE|0/10",
+        "answer": "I am computer science student and currently in the last message of my studies and my experience include web developer application development in front and development",
+        "aiScore": 5,
+        "compositeScore": 5,
+        "timestamp": "2026-02-06T16:37:19.559Z"
+      },
+      {
+        "question": "Thank you for sharing. Can you elaborate on specific projects you've worked on, particularly focusing on technologies like JavaScript, React, or Node.js? SCORE|5/10",
+        "answer": "I am yes I have done my final year project in which I use all of these technology is + I have also use Python for the machine learning and application development",
+        "aiScore": 6,
+        "compositeScore": 5,
+        "timestamp": "2026-02-06T16:37:48.257Z"
+      },
+      {
+        "question": "Can you describe your experience with version control systems, particularly Git? How have you used it in collaborative projects? SCORE|6/10",
+        "answer": "yes I do now about virgin control system and get I mostly upload my program and my goes to the gate and publish time and also used to deploy in the court there",
+        "aiScore": 5,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:38:31.509Z"
+      },
+      {
+        "question": "I need you to clarify your answer. Can you explain how you specifically used Git in collaborative projects, such as handling merges or resolving conflicts? SCORE|5/10",
+        "answer": "well I don't know about this",
+        "aiScore": 4,
+        "compositeScore": 3,
+        "timestamp": "2026-02-06T16:38:48.369Z"
+      },
+      {
+        "question": "It's important to have a good understanding of Git for collaborative projects. Can you discuss how you would handle a situation where two team members made conflicting changes to the same file? SCORE|4/10",
+        "answer": "I would simply delete one file and keep only single file that is correct",
+        "aiScore": 3,
+        "compositeScore": 3,
+        "timestamp": "2026-02-06T16:39:12.653Z"
+      },
+      {
+        "question": "That's one way to resolve a conflict, but it may not always be the best approach. Can you think of a more collaborative method for resolving conflicts in version control? SCORE|3/10",
+        "answer": "move to the next question please",
+        "aiScore": 5,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:39:29.660Z"
+      },
+      {
+        "question": "Understood. What would you say is your greatest weakness in your technical skill set, and how are you working to improve it? SCORE|5/10",
+        "answer": "My Greatest weakness is that I mostly use AI to make my projects and do not Code by myself at all",
+        "aiScore": 4,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:39:54.096Z"
+      },
+      {
+        "question": "Relying on AI tools can be beneficial, but it's essential to maintain coding skills. How do you plan to balance using AI with enhancing your coding abilities? SCORE|4/10",
+        "answer": "I am making projects more and more",
+        "aiScore": 5,
+        "compositeScore": 4,
+        "timestamp": "2026-02-06T16:40:26.609Z"
+      },
+      {
+        "question": "It's good to hear that you're working on more projects. Can you provide a specific example of a project you're currently working on that challenges your coding skills? SCORE|5/10",
+        "answer": "I am well currently making I making a interview in bought that there is basically you",
+        "aiScore": 4,
+        "compositeScore": 3,
+        "timestamp": "2026-02-06T16:40:46.579Z"
+      },
+      {
+        "question": "It seems there was a misunderstanding in your response. Can you clarify what the project is about and what specific technical challenges you are facing while developing it? SCORE|4/10",
+        "answer": "well I am making a interview in boat",
+        "aiScore": 3,
+        "compositeScore": 3,
+        "timestamp": "2026-02-06T16:41:07.051Z"
+      },
+      {
+        "question": "Can you elaborate on what \"interview in boat\" entails? What technologies are you using, and what challenges are you encountering in this project? SCORE|3/10",
+        "answer": "learning the tools and Technology is that will be used in this project are we tell with challenging and I",
+        "aiScore": 2,
+        "compositeScore": 3,
+        "timestamp": "2026-02-06T16:41:30.739Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "anonymous": {
+    "id": "anonymous",
+    "name": "Anonymous",
+    "createdAt": "2026-02-06T14:56:51.395Z",
+    "totalInterviews": 2,
+    "averageScore": 4.6,
+    "bestScore": 5.4,
+    "passRate": 0,
+    "totalPassed": 0,
+    "skillProfile": {
+      "General": {
+        "scores": [
+          4,
+          3.5
+        ],
+        "average": 3.8
+      },
+      "JavaScript/TypeScript": {
+        "scores": [
+          4,
+          3.7
+        ],
+        "average": 3.9
+      },
+      "React/Frontend": {
+        "scores": [
+          4.2,
+          5
+        ],
+        "average": 4.6
+      },
+      "Problem Solving": {
+        "scores": [
+          4.3,
+          4
+        ],
+        "average": 4.2
+      },
+      "Database": {
+        "scores": [
+          4
+        ],
+        "average": 4
+      },
+      "Leadership": {
+        "scores": [
+          4.2
+        ],
+        "average": 4.2
+      },
+      "Backend/API": {
+        "scores": [
+          4.5
+        ],
+        "average": 4.5
+      },
+      "System Design": {
+        "scores": [
+          4
+        ],
+        "average": 4
+      },
+      "Communication": {
+        "scores": [
+          4,
+          3
+        ],
+        "average": 3.5
+      }
+    },
+    "lastInterviewAt": "2026-02-06T16:41:42.892Z"
+  }
+}
