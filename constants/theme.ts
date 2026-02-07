@@ -1,6 +1,5 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Professional Interview Bot Theme
  */
 
 import { Platform } from 'react-native';
@@ -25,6 +24,51 @@ export const Colors = {
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
   },
+};
+
+/**
+ * App-wide professional color palette
+ */
+export const AppColors = {
+  // Primary brand colors
+  primary: '#4F46E5',        // Indigo-600
+  primaryLight: '#818CF8',   // Indigo-400
+  primaryDark: '#3730A3',    // Indigo-800
+  primaryBg: '#EEF2FF',      // Indigo-50
+
+  // Accent
+  accent: '#06B6D4',         // Cyan-500
+  accentLight: '#67E8F9',    // Cyan-300
+  accentBg: '#ECFEFF',       // Cyan-50
+
+  // Success / Pass
+  success: '#10B981',        // Emerald-500
+  successLight: '#D1FAE5',   // Emerald-100
+  successDark: '#065F46',    // Emerald-800
+
+  // Warning
+  warning: '#F59E0B',        // Amber-500
+  warningLight: '#FEF3C7',   // Amber-100
+  warningDark: '#92400E',    // Amber-800
+
+  // Danger / Fail
+  danger: '#EF4444',         // Red-500
+  dangerLight: '#FEE2E2',   // Red-100
+  dangerDark: '#991B1B',     // Red-800
+
+  // Neutrals
+  bg: '#F8FAFC',             // Slate-50
+  surface: '#FFFFFF',
+  surfaceAlt: '#F1F5F9',     // Slate-100
+  border: '#E2E8F0',         // Slate-200
+  borderLight: '#F1F5F9',    // Slate-100
+  textPrimary: '#0F172A',    // Slate-900
+  textSecondary: '#475569',  // Slate-600
+  textMuted: '#94A3B8',      // Slate-400
+  textOnPrimary: '#FFFFFF',
+
+  // Card shadow
+  shadow: '#0F172A',
 };
 
 export const Fonts = Platform.select({

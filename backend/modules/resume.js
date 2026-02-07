@@ -132,6 +132,9 @@ export function parseResume(resumeText) {
   // Extract project/achievement indicators
   const achievements = extractAchievements(resumeText);
 
+  // Extract candidate name
+  const candidateName = extractName(resumeText);
+
   return {
     skills: {
       all: [...new Set(allSkills)],
@@ -143,6 +146,7 @@ export function parseResume(resumeText) {
     expertise,
     education,
     achievements,
+    candidateName,
     skillDensity: Math.round((allSkills.length / Math.max(resumeText.split(/\s+/).length, 1)) * 100 * 10) / 10,
   };
 }
@@ -287,6 +291,31 @@ function extractAchievements(text) {
   }
 
   return [...new Set(achievements)].slice(0, 5);
+}
+
+/**
+ * Extract candidate name from resume text
+ * Typically the first non-empty, non-header line at the top of a resume
+ */
+function extractName(text) {
+  if (!text) return '';
+  const lines = text.split(/\n/).map(l => l.trim()).filter(Boolean);
+
+  // Skip common header labels
+  const skipPatterns = /^(resume|curriculum vitae|cv|profile|summary|contact|objective|about|phone|email|address|portfolio|linkedin|github|http)/i;
+
+  for (let i = 0; i < Math.min(lines.length, 5); i++) {
+    const line = lines[i];
+    // Skip very long lines (likely a paragraph), lines with @/http (emails/links), or header labels
+    if (line.length > 50) continue;
+    if (/@|http|www\.|\+\d{2,}|\d{5,}/.test(line)) continue;
+    if (skipPatterns.test(line)) continue;
+    // Must look like a name: 2-4 capitalized words, letters/spaces/hyphens/dots only
+    if (/^[A-Z][a-zA-Z.'-]+(?:\s+[A-Z][a-zA-Z.'-]+){1,3}$/.test(line)) {
+      return line;
+    }
+  }
+  return '';
 }
 
 export default { parseResume, generateResumeBasedPrompt };

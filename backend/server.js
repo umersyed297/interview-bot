@@ -121,6 +121,10 @@ function buildSystemPrompt(session) {
     }
   }
 
+  if (session.domainPrompt) {
+    prompt += `\n\n${session.domainPrompt}`;
+  }
+
   if (session.resumePrompt) {
     prompt += `\n\n${session.resumePrompt}`;
   }
@@ -143,11 +147,11 @@ app.get('/health', (req, res) => {
 // ─── Main Chat Endpoint ───
 app.post('/api/chat', async (req, res) => {
   try {
-    const { message, sessionId = 'default', candidateId = 'anonymous', resumeText } = req.body;
+    const { message, sessionId = 'default', candidateId = 'anonymous', resumeText, domain } = req.body;
     const isStartMessage = message === '__start__';
     const isEndMessage = message === '__end__';
     const isTimeoutMessage = message === '__timeout__';
-    console.log(`[${new Date().toISOString()}] 📨 ${sessionId}: "${message}"${resumeText ? ' [with resume]' : ''}`);
+    console.log(`[${new Date().toISOString()}] 📨 ${sessionId}: "${message}"${resumeText ? ' [with resume]' : ''}${domain ? ` [domain: ${domain}]` : ''}`);
 
     if (!message) {
       return res.status(400).json({ error: 'Message is required' });
@@ -173,10 +177,11 @@ app.post('/api/chat', async (req, res) => {
       });
     }
 
+    const session = sessionData.get(sessionId);
+
     // Apply resume context if provided (on __start__ or standalone)
     const effectiveResumeText = resumeText || pendingResumes.get(sessionId);
     if (effectiveResumeText && isStartMessage) {
-      const session = sessionData.get(sessionId);
       const parsed = parseResume(effectiveResumeText);
       const promptData = generateResumeBasedPrompt(parsed);
       session.resumePrompt = promptData.systemPromptAddition;
@@ -191,7 +196,12 @@ app.post('/api/chat', async (req, res) => {
       console.log(`[${sessionId}] 📄 Resume applied: ${parsed.skills.count} skills, ${parsed.experienceLevel} level`);
     }
 
-    const session = sessionData.get(sessionId);
+    // Apply domain context if provided
+    if (domain && domain !== 'general' && isStartMessage) {
+      session.domain = domain;
+      session.domainPrompt = `\nINTERVIEW DOMAIN: ${domain}\nFocus ALL questions specifically on ${domain}. Ask technical and role-specific questions relevant to a ${domain} position. Tailor difficulty, terminology, and scenarios to this domain.`;
+      console.log(`[${sessionId}] 🎯 Domain set: ${domain}`);
+    }
 
     if (!conversationHistory.has(sessionId)) {
       conversationHistory.set(sessionId, [
@@ -201,10 +211,8 @@ app.post('/api/chat', async (req, res) => {
 
     const history = conversationHistory.get(sessionId);
 
-    // Update system prompt with adaptive difficulty
-    if (!isStartMessage && history.length > 0) {
-      history[0] = { role: 'system', content: buildSystemPrompt(session) };
-    }
+    // Always rebuild system prompt (includes domain, resume, and adaptive difficulty)
+    history[0] = { role: 'system', content: buildSystemPrompt(session) };
 
     const promptMessage = isStartMessage
       ? 'Start the interview now.'
@@ -510,6 +518,7 @@ app.post('/api/resume/upload', upload.single('resume'), async (req, res) => {
         topExpertise: parsed.expertise.map(e => e.area),
         education: parsed.education,
         achievements: parsed.achievements,
+        candidateName: parsed.candidateName || '',
       },
     });
   } catch (error) {

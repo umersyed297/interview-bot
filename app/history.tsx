@@ -1,7 +1,8 @@
 import { useRouter } from 'expo-router';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
     ActivityIndicator,
+    Animated,
     FlatList,
     RefreshControl,
     StyleSheet,
@@ -12,6 +13,24 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const API_URL = 'http://localhost:3000';
+
+// Professional color palette
+const C = {
+  primary: '#4F46E5',
+  primaryBg: '#EEF2FF',
+  success: '#10B981',
+  successLight: '#D1FAE5',
+  warning: '#F59E0B',
+  warningLight: '#FEF3C7',
+  danger: '#EF4444',
+  dangerLight: '#FEE2E2',
+  bg: '#F8FAFC',
+  surface: '#FFFFFF',
+  border: '#E2E8F0',
+  textPrimary: '#0F172A',
+  textSecondary: '#475569',
+  textMuted: '#94A3B8',
+};
 
 interface HistoryItem {
   sessionId: string;
@@ -79,14 +98,28 @@ export default function HistoryScreen() {
   };
 
   const getScoreColor = (score: number) => {
-    if (score >= 8) return '#34C759';
-    if (score >= 6) return '#FF9500';
-    return '#FF3B30';
+    if (score >= 8) return C.success;
+    if (score >= 6) return C.warning;
+    return C.danger;
   };
 
-  const renderSession = ({ item }: { item: HistoryItem }) => (
+  const getScoreBg = (score: number) => {
+    if (score >= 8) return C.successLight;
+    if (score >= 6) return C.warningLight;
+    return C.dangerLight;
+  };
+
+  // Entrance animation
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    Animated.timing(fadeAnim, { toValue: 1, duration: 500, useNativeDriver: true }).start();
+  }, []);
+
+  const renderSession = ({ item, index }: { item: HistoryItem; index: number }) => (
+    <Animated.View style={{ opacity: fadeAnim }}>
     <TouchableOpacity
       style={styles.sessionCard}
+      activeOpacity={0.7}
       onPress={() =>
         router.push({
           pathname: '/results',
@@ -101,9 +134,9 @@ export default function HistoryScreen() {
       }
     >
       <View style={styles.sessionLeft}>
-        <View style={[styles.scoreBadge, { backgroundColor: getScoreColor(item.score) + '20', borderColor: getScoreColor(item.score) }]}>
+        <View style={[styles.scoreBadge, { backgroundColor: getScoreBg(item.score), borderColor: getScoreColor(item.score) }]}>
           <Text style={[styles.scoreBadgeText, { color: getScoreColor(item.score) }]}>
-            {item.score}/10
+            {item.score}
           </Text>
         </View>
       </View>
@@ -114,61 +147,65 @@ export default function HistoryScreen() {
         </Text>
       </View>
       <View style={styles.sessionRight}>
-        <Text style={item.passed ? styles.passTag : styles.failTag}>
-          {item.passed ? '✅' : '❌'}
-        </Text>
+        <View style={[styles.statusDot, { backgroundColor: item.passed ? C.success : C.danger }]} />
         <Text style={styles.chevron}>›</Text>
       </View>
     </TouchableOpacity>
+    </Animated.View>
   );
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()}>
-          <Text style={styles.backBtn}>← Back</Text>
+        <TouchableOpacity onPress={() => router.back()} activeOpacity={0.7}>
+          <Text style={styles.backBtn}>{'<'} Back</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Interview History</Text>
+        <Text style={styles.headerTitle}>History</Text>
         <View style={{ width: 50 }} />
       </View>
 
       {/* Profile Summary */}
       {profile && profile.totalInterviews > 0 && (
-        <View style={styles.profileCard}>
+        <Animated.View style={[styles.profileCard, { opacity: fadeAnim }]}>
           <View style={styles.profileRow}>
             <View style={styles.profileStat}>
               <Text style={styles.profileStatNum}>{profile.totalInterviews}</Text>
               <Text style={styles.profileStatLabel}>Interviews</Text>
             </View>
+            <View style={styles.profileDivider} />
             <View style={styles.profileStat}>
               <Text style={[styles.profileStatNum, { color: getScoreColor(profile.averageScore) }]}>
                 {profile.averageScore}
               </Text>
               <Text style={styles.profileStatLabel}>Avg Score</Text>
             </View>
+            <View style={styles.profileDivider} />
             <View style={styles.profileStat}>
               <Text style={styles.profileStatNum}>{profile.passRate}%</Text>
               <Text style={styles.profileStatLabel}>Pass Rate</Text>
             </View>
+            <View style={styles.profileDivider} />
             <View style={styles.profileStat}>
-              <Text style={[styles.profileStatNum, { color: '#34C759' }]}>{profile.bestScore}</Text>
+              <Text style={[styles.profileStatNum, { color: C.success }]}>{profile.bestScore}</Text>
               <Text style={styles.profileStatLabel}>Best</Text>
             </View>
           </View>
-        </View>
+        </Animated.View>
       )}
 
       {loading ? (
         <View style={styles.centerContent}>
-          <ActivityIndicator size="large" color="#007AFF" />
+          <ActivityIndicator size="large" color={C.primary} />
           <Text style={styles.loadingText}>Loading history...</Text>
         </View>
       ) : sessions.length === 0 ? (
         <View style={styles.centerContent}>
-          <Text style={styles.emptyIcon}>📋</Text>
+          <View style={styles.emptyIconBg}>
+            <Text style={styles.emptyIcon}>📋</Text>
+          </View>
           <Text style={styles.emptyTitle}>No Interviews Yet</Text>
           <Text style={styles.emptySubtitle}>Complete your first interview to see history here</Text>
-          <TouchableOpacity style={styles.startBtn} onPress={() => router.push('/welcome')}>
+          <TouchableOpacity style={styles.startBtn} onPress={() => router.push('/welcome')} activeOpacity={0.85}>
             <Text style={styles.startBtnText}>Start Interview</Text>
           </TouchableOpacity>
         </View>
@@ -186,70 +223,69 @@ export default function HistoryScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#f8f9fa' },
+  container: { flex: 1, backgroundColor: C.bg },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
-    paddingVertical: 12,
+    paddingVertical: 14,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
+    borderBottomColor: C.border,
   },
-  backBtn: { fontSize: 15, color: '#007AFF', fontWeight: '600' },
-  headerTitle: { fontSize: 18, fontWeight: '700', color: '#1a1a1a' },
+  backBtn: { fontSize: 15, color: C.primary, fontWeight: '600' },
+  headerTitle: { fontSize: 18, fontWeight: '700', color: C.textPrimary },
   profileCard: {
     marginHorizontal: 16,
-    marginTop: 12,
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    padding: 16,
-    elevation: 2,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
+    marginTop: 14,
+    backgroundColor: C.surface,
+    borderRadius: 16,
+    padding: 18,
+    borderWidth: 1,
+    borderColor: C.border,
   },
-  profileRow: { flexDirection: 'row', justifyContent: 'space-around' },
-  profileStat: { alignItems: 'center' },
-  profileStatNum: { fontSize: 22, fontWeight: '700', color: '#1a1a1a' },
-  profileStatLabel: { fontSize: 11, color: '#999', marginTop: 2 },
-  listContent: { paddingHorizontal: 16, paddingTop: 12, paddingBottom: 24 },
+  profileRow: { flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' },
+  profileStat: { alignItems: 'center', flex: 1 },
+  profileStatNum: { fontSize: 22, fontWeight: '800', color: C.textPrimary },
+  profileStatLabel: { fontSize: 10, color: C.textMuted, marginTop: 4, textTransform: 'uppercase', letterSpacing: 0.5, fontWeight: '500' },
+  profileDivider: { width: 1, height: 30, backgroundColor: C.border },
+  listContent: { paddingHorizontal: 16, paddingTop: 14, paddingBottom: 24 },
   sessionCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#fff',
-    borderRadius: 12,
+    backgroundColor: C.surface,
+    borderRadius: 14,
     padding: 14,
-    marginBottom: 8,
-    elevation: 1,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 2,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: C.border,
   },
-  sessionLeft: { marginRight: 12 },
+  sessionLeft: { marginRight: 14 },
   scoreBadge: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     borderWidth: 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  scoreBadgeText: { fontSize: 14, fontWeight: '700' },
+  scoreBadgeText: { fontSize: 16, fontWeight: '800' },
   sessionCenter: { flex: 1 },
-  sessionDate: { fontSize: 14, fontWeight: '600', color: '#333' },
-  sessionMeta: { fontSize: 12, color: '#999', marginTop: 3 },
-  sessionRight: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  passTag: { fontSize: 18 },
-  failTag: { fontSize: 18 },
-  chevron: { fontSize: 22, color: '#ccc', fontWeight: '300' },
+  sessionDate: { fontSize: 14, fontWeight: '600', color: C.textPrimary },
+  sessionMeta: { fontSize: 12, color: C.textMuted, marginTop: 3 },
+  sessionRight: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  statusDot: { width: 10, height: 10, borderRadius: 5 },
+  chevron: { fontSize: 22, color: C.textMuted, fontWeight: '300' },
   centerContent: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 40 },
-  loadingText: { marginTop: 12, fontSize: 14, color: '#666' },
-  emptyIcon: { fontSize: 48, marginBottom: 16 },
-  emptyTitle: { fontSize: 20, fontWeight: '700', color: '#333', marginBottom: 8 },
-  emptySubtitle: { fontSize: 14, color: '#666', textAlign: 'center', marginBottom: 24 },
-  startBtn: { backgroundColor: '#007AFF', paddingHorizontal: 24, paddingVertical: 12, borderRadius: 10 },
-  startBtnText: { fontSize: 14, fontWeight: '600', color: '#fff' },
+  loadingText: { marginTop: 12, fontSize: 14, color: C.textSecondary },
+  emptyIconBg: {
+    width: 72, height: 72, borderRadius: 36,
+    backgroundColor: C.primaryBg, alignItems: 'center', justifyContent: 'center',
+    marginBottom: 16,
+  },
+  emptyIcon: { fontSize: 32 },
+  emptyTitle: { fontSize: 20, fontWeight: '700', color: C.textPrimary, marginBottom: 8 },
+  emptySubtitle: { fontSize: 14, color: C.textSecondary, textAlign: 'center', marginBottom: 24, lineHeight: 20 },
+  startBtn: { backgroundColor: C.primary, paddingHorizontal: 28, paddingVertical: 14, borderRadius: 14, elevation: 4, shadowColor: C.primary, shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.25, shadowRadius: 6 },
+  startBtnText: { fontSize: 15, fontWeight: '700', color: '#fff' },
 });
