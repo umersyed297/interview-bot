@@ -1,0 +1,9 @@
+# Ignore the local android build folder - EAS will run expo prebuild
+/android
+/ios
+
+# Other unneeded files
+*.log
+.env
+.env.*
+!.env.example
