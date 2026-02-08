@@ -10,8 +10,9 @@ import {
     View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { API_BASE_URL } from '../config';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = API_BASE_URL;
 
 // Professional color palette
 const C = {

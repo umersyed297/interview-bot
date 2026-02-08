@@ -36,8 +36,8 @@ const C = {
   textOnPrimary: '#FFFFFF',
 };
 
-// Backend API URL (USB reverse to localhost)
-const API_URL = "http://localhost:3000";
+import { API_BASE_URL } from '../../config';
+const API_URL = API_BASE_URL;
 
 // How long to wait after last speech result before auto-sending (ms)
 const SILENCE_TIMEOUT = 2000;

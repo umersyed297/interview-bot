@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: interview-bot-api
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false  # You'll set this manually in the Render dashboard
+      - key: PORT
+        value: 3000
