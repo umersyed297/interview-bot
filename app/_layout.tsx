@@ -21,6 +21,13 @@ export default function Layout() {
           }}
         />
         <Stack.Screen
+          name="splash"
+          options={{
+            animation: "fade",
+            animationDuration: 200,
+          }}
+        />
+        <Stack.Screen
           name="welcome"
           options={{
             animation: "fade",
